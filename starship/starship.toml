@@ -1,0 +1,100 @@
+palette = "kelvin_systems"
+
+format = """
+[╭─](warm_grey) $directory$git_branch$git_status$python$nodejs$rust$golang$cmd_duration
+[╰─❯](marsala) """
+
+right_format = "$status $time"
+
+[palettes.kelvin_systems]
+marsala       = "#964F4C"
+marsala_light = "#C46B68"
+cloud_dancer  = "#F0EEE9"
+black_beauty  = "#27272A"
+warm_grey     = "#B4B0AA"
+dark_grey     = "#4A4548"
+sage          = "#7DA875"
+amber         = "#D4A870"
+steel         = "#6E8FB0"
+plum          = "#B07898"
+teal          = "#70B0A0"
+
+[directory]
+style             = "bold marsala"
+read_only         = " 󰌾"
+read_only_style   = "marsala_light"
+truncation_length = 3
+truncate_to_repo  = true
+home_symbol       = "~"
+format            = "[$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+style  = "bold steel"
+symbol = " "
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[git_status]
+style    = "marsala_light"
+ahead    = "⇡${count}"
+behind   = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed  = " "
+modified = "!${count}"
+staged   = "+${count}"
+renamed  = "»${count}"
+deleted  = "✘${count}"
+format   = '([$all_status$ahead_behind]($style) )'
+
+[python]
+style  = "teal"
+symbol = " "
+format = "[$symbol$pyenv_prefix($version )($virtualenv )]($style)"
+
+[nodejs]
+style  = "sage"
+symbol = " "
+format = "[$symbol$version ]($style)"
+
+[rust]
+style  = "amber"
+symbol = " "
+format = "[$symbol$version ]($style)"
+
+[golang]
+style  = "steel"
+symbol = " "
+format = "[$symbol$version ]($style)"
+
+[cmd_duration]
+min_time          = 3_000
+style             = "warm_grey"
+show_milliseconds = false
+format            = "[took $duration]($style) "
+
+[status]
+style            = "marsala_light"
+symbol           = "✘ "
+not_found_symbol = "󰍉 "
+format           = "[$symbol$status]($style) "
+disabled         = false
+
+[time]
+style       = "dark_grey"
+format      = "[$time]($style)"
+disabled    = false
+time_format = "%H:%M"
+
+[username]
+style_user  = "cloud_dancer"
+style_root  = "marsala_light bold"
+show_always = false
+format      = "[$user]($style)[@](warm_grey)"
+
+[hostname]
+style    = "warm_grey"
+ssh_only = true
+format   = "[$hostname]($style) "
+
+[character]
+disabled = true

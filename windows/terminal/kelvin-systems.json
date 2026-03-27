@@ -1,0 +1,26 @@
+{
+    "name": "Kelvin Systems",
+
+    "background":          "#1C1A1A",
+    "foreground":          "#F0EEE9",
+    "cursorColor":         "#964F4C",
+    "selectionBackground": "#6B3836",
+
+    "black":         "#27272A",
+    "red":           "#964F4C",
+    "green":         "#5C7A54",
+    "yellow":        "#B8874E",
+    "blue":          "#4E6B8C",
+    "purple":        "#8C5B7A",
+    "cyan":          "#4E8C7A",
+    "white":         "#B4B0AA",
+
+    "brightBlack":   "#4A4548",
+    "brightRed":     "#C46B68",
+    "brightGreen":   "#7DA875",
+    "brightYellow":  "#D4A870",
+    "brightBlue":    "#6E8FB0",
+    "brightPurple":  "#B07898",
+    "brightCyan":    "#70B0A0",
+    "brightWhite":   "#F0EEE9"
+}

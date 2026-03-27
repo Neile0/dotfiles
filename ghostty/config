@@ -1,0 +1,27 @@
+theme = kelvin-systems
+
+font-family        = "SpaceMono Nerd Font Mono"
+font-size          = 15
+adjust-cell-height = 4
+bold-color         = bright
+
+background-opacity     = 0.92
+background-blur-radius = 20
+
+cursor-style       = underline
+cursor-style-blink = true
+
+mouse-hide-while-typing      = true
+macos-option-as-alt          = left
+shell-integration-features   = no-cursor
+
+link-url = true
+
+scrollback-limit = 10000
+
+window-padding-x       = 16
+window-padding-y       = 16
+window-padding-balance = true
+macos-titlebar-style   = transparent
+
+auto-update = check
